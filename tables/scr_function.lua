@@ -20,10 +20,9 @@ scr_function = {}
 ---@param script_name string Name of the script.
 ---@param function_name string Name of the function. This parameter needs to be unique.
 ---@param pattern string Pattern to scan for within the script.
----@param return_type_string string Return type of the function. Supported types are **"int"**, **"bool"**, **"const char\*/string"**, **"ptr/pointer/*"**, **"float"**, and **"vector3"**. Anything different will be rejected.
+---@param return_type_string string Return type of the function. Supported types are **"void"**, **"int"**, **"bool"**, **"const char\*/string"**, **"ptr/pointer/*"**, **"float"**, and **"vector3"**. Anything different will be rejected.
 ---@param args_ table Arguments to pass to the function. Supported types are the same as return types.
 function scr_function.call_script_function(script_name, function_name, pattern, return_type_string, args_) end
-
 
 ---Calls a script function directly using the function position with the given arguments. Returns the return value as the given type.
 ---**Example Usage:**
@@ -38,9 +37,7 @@ function scr_function.call_script_function(script_name, function_name, pattern, 
 ---```
 ---@param script_name string Name of the script.
 ---@param instruction_pointer integer Position of the function within the script.
----@param return_type_string string Return type of the function. Supported types are **"int"**, **"bool"**, **"const char\*/string"**, **"ptr/pointer/*"**, **"float"**, and **"vector3"**. Anything different will be rejected.
+---@param return_type_string string Return type of the function. Supported types are **"void"**, **"int"**, **"bool"**, **"const char\*/string"**, **"ptr/pointer/*"**, **"float"**, and **"vector3"**. Anything different will be rejected.
 ---@param args_ table Arguments to pass to the function. Supported types are the same as return types.
 function scr_function.call_script_function(script_name, instruction_pointer, return_type_string, args_) end
-
-
 

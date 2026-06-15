@@ -576,7 +576,8 @@ f.write(
     """
 ---@meta
 
----@alias float number
+---@class float number
 ---@alias Vector3 table
     """
 )
+

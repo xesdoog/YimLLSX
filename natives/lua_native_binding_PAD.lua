@@ -1,20 +1,20 @@
 ---@meta
 ---@alias BOOL boolean
----@alias float number
+---@class float number
 ---@alias int integer
 ---@alias Hash integer
----@alias Blip integer
+---@alias blip integer
 ---@alias Cam integer
----@alias Entity integer
+---@alias entity integer
 ---@alias FireId integer
 ---@alias Interior integer
 ---@alias ItemSet integer
----@alias Object integer
----@alias Ped integer
+---@alias object integer
+---@alias ped integer
 ---@alias Pickup integer
----@alias Player integer
+---@alias player integer
 ---@alias ScrHandle integer
----@alias Vehicle integer
+---@alias vehicle integer
 ---@alias Any any
 ---@alias Vector3 vec3
 
@@ -269,5 +269,6 @@ function PAD.SHUTDOWN_PC_SCRIPTED_CONTROLS() end
 
 ---@param control int
 function PAD.ALLOW_ALTERNATIVE_SCRIPT_CONTROLS_LAYOUT(control) end
+
 
 

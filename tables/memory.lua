@@ -19,7 +19,7 @@ function memory.scan_pattern(pattern) end
 ---pointer = memory.handle_to_ptr(entity)
 ---```
 ---@param entity number script game entity handle
----@return pointer A rage::CDynamicEntity pointer to the script game entity handle
+---@return pointer A rage::CDynamicentity pointer to the script game entity handle
 function memory.handle_to_ptr(entity) end
 
 
@@ -27,8 +27,8 @@ function memory.handle_to_ptr(entity) end
 ---```lua
 ---number = memory.ptr_to_handle(mem_addr)
 ---```
----@param mem_addr pointer A rage::CDynamicEntity pointer.
----@return number The script game entity handle linked to the given rage::CDynamicEntity pointer.
+---@param mem_addr pointer A rage::CDynamicentity pointer.
+---@return number The script game entity handle linked to the given rage::CDynamicentity pointer.
 function memory.ptr_to_handle(mem_addr) end
 
 
@@ -114,6 +114,7 @@ function memory.dynamic_hook(hook_name, return_type, param_types, target_func_pt
 ---@param target_func_ptr pointer The pointer to the function to call.
 ---@return string Key name of the function that you can now call from lua.
 function memory.dynamic_call(return_type, param_types, target_func_ptr) end
+
 
 
 

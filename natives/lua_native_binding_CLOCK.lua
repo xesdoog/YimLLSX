@@ -1,20 +1,20 @@
 ---@meta
 ---@alias BOOL boolean
----@alias float number
+---@class float number
 ---@alias int integer
 ---@alias Hash integer
----@alias Blip integer
+---@alias blip integer
 ---@alias Cam integer
----@alias Entity integer
+---@alias entity integer
 ---@alias FireId integer
 ---@alias Interior integer
 ---@alias ItemSet integer
----@alias Object integer
----@alias Ped integer
+---@alias object integer
+---@alias ped integer
 ---@alias Pickup integer
----@alias Player integer
+---@alias player integer
 ---@alias ScrHandle integer
----@alias Vehicle integer
+---@alias vehicle integer
 ---@alias Any any
 ---@alias Vector3 vec3
 
@@ -122,5 +122,6 @@ function CLOCK.GET_UTC_TIME(year, month, day, hour, minute, second) end
 ---@return int minute
 ---@return int second
 function CLOCK.GET_LOCAL_TIME(year, month, day, hour, minute, second) end
+
 
 

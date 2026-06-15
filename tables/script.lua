@@ -17,15 +17,15 @@ script = {}
 ---     while not STREAMING.HAS_MODEL_LOADED(ModelHash) do -- Waits for the model to load
 ---         script:yield()
 ---     end
----     local myPed = PLAYER.PLAYER_PED_ID()
----     local myCoords = ENTITY.GET_ENTITY_COORDS(myPed, true)
+---     local myped = PLAYER.PLAYER_PED_ID()
+---     local myCoords = ENTITY.GET_ENTITY_COORDS(myped, true)
 ---     -- Spawns a networked vehicle on your current coords
----     local spawnedVehicle = VEHICLE.CREATE_VEHICLE(ModelHash, myCoords.x, myCoords.y, myCoords.z, ENTITY.GET_ENTITY_HEADING(myPed), true, false)
+---     local spawnedvehicle = VEHICLE.CREATE_VEHICLE(ModelHash, myCoords.x, myCoords.y, myCoords.z, ENTITY.GET_ENTITY_HEADING(myped), true, false)
 ---     -- removes model from game memory as we no longer need it
 ---     STREAMING.SET_MODEL_AS_NO_LONGER_NEEDED(ModelHash)
 ---     -- sleep for 2s
 ---     script:sleep(2000)
----     ENTITY.DELETE_ENTITY(spawnedVehicle)
+---     ENTITY.DELETE_ENTITY(spawnedvehicle)
 ---end)
 ---```
 ---**Example Usage:**
@@ -50,15 +50,15 @@ function script.register_looped(name, func) end
 ---     while not STREAMING.HAS_MODEL_LOADED(ModelHash) do -- Waits for the model to load
 ---         script:yield()
 ---     end
----     local myPed = PLAYER.PLAYER_PED_ID()
----     local myCoords = ENTITY.GET_ENTITY_COORDS(myPed, true)
+---     local myped = PLAYER.PLAYER_PED_ID()
+---     local myCoords = ENTITY.GET_ENTITY_COORDS(myped, true)
 ---     -- Spawns a networked vehicle on your current coords
----     local spawnedVehicle = VEHICLE.CREATE_VEHICLE(ModelHash, myCoords.x, myCoords.y, myCoords.z, ENTITY.GET_ENTITY_HEADING(myPed), true, false)
+---     local spawnedvehicle = VEHICLE.CREATE_VEHICLE(ModelHash, myCoords.x, myCoords.y, myCoords.z, ENTITY.GET_ENTITY_HEADING(myped), true, false)
 ---     -- removes model from game memory as we no longer need it
 ---     STREAMING.SET_MODEL_AS_NO_LONGER_NEEDED(ModelHash)
 ---     -- sleep for 2s
 ---     script:sleep(2000)
----     ENTITY.DELETE_ENTITY(spawnedVehicle)
+---     ENTITY.DELETE_ENTITY(spawnedvehicle)
 ---end)
 ---```
 ---**Example Usage:**
@@ -105,6 +105,7 @@ function script.execute_as_script(script_name, func) end
 ---```
 ---@param script_name string The name of the script.
 function script.start_launcher_script(script_name) end
+
 
 
 

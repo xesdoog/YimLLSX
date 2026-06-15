@@ -1,25 +1,25 @@
 ---@meta
 ---@alias BOOL boolean
----@alias float number
+---@class float number
 ---@alias int integer
 ---@alias Hash integer
----@alias Blip integer
+---@alias blip integer
 ---@alias Cam integer
----@alias Entity integer
+---@alias entity integer
 ---@alias FireId integer
 ---@alias Interior integer
 ---@alias ItemSet integer
----@alias Object integer
----@alias Ped integer
+---@alias object integer
+---@alias ped integer
 ---@alias Pickup integer
----@alias Player integer
+---@alias player integer
 ---@alias ScrHandle integer
----@alias Vehicle integer
+---@alias vehicle integer
 ---@alias Any any
 ---@alias Vector3 vec3
 
 EVENT = {}
----@param ped Ped
+---@param ped ped
 ---@param name Hash
 function EVENT.SET_DECISION_MAKER(ped, name) end
 
@@ -49,7 +49,7 @@ function EVENT.ADD_SHOCKING_EVENT_AT_POSITION(eventType, x, y, z, duration) end
 
 
 ---@param eventType int
----@param entity Entity
+---@param entity entity
 ---@param duration float
 ---@return int
 function EVENT.ADD_SHOCKING_EVENT_FOR_ENTITY(eventType, entity, duration) end
@@ -84,5 +84,6 @@ function EVENT.SUPPRESS_SHOCKING_EVENT_TYPE_NEXT_FRAME(eventType) end
 
 
 function EVENT.SUPPRESS_AGITATION_EVENTS_NEXT_FRAME() end
+
 
 

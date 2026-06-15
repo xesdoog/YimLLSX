@@ -3,3 +3,4 @@
 ---Refer to the tab class documentation for more info (tab:add_sameline())
 ---@class sameline
 sameline = {}
+

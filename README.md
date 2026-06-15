@@ -20,3 +20,4 @@ Refer to LuaLS docs.
 Generated with [gen_lua_natives.py](scripts/gen_lua_natives.py) and [lua_doc_gen.py](scripts/lua_doc_gen.py).
 
 Scripts are based on `natives_gen.py` and `doc_gen.py` by [xiaoxiao921](https://github.com/xiaoxiao921).
+
