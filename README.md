@@ -1,4 +1,5 @@
-# YimLLS
+# YimLLSX
+
 YimMenu Lua API support for the Lua Language Server.
 
 Technically uses TupoyeMenu Lua API but most bindings should be the same.
