@@ -3,6 +3,9 @@ YimMenu Lua API support for the Lua Language Server.
 
 Technically uses TupoyeMenu Lua API but most bindings should be the same.
 
+> [!IMPORTANT]
+> This is a modified version tailored specifically for [SmallBase](https://github.com/xesdoog/SmallBase) / [SSV2](https://github.com/YimMenu-Lua/Samurais-Scripts). For vanilla YimMenu Lua API stubs, use the original YimLLS repository that this one is forked from.
+
 # How to use
 ## VSCode
 1. `git clone https://github.com/YimMenu-Lua/YimLLS.git`
